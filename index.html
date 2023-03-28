@@ -164,15 +164,15 @@
 						<div class="button__icon"><img src="img/icons/desktop.svg" alt=""></div>
 						<div class="button__text">Мои проекты</div>
 					</a>
-					<a target="_blank" rel="noopener noreferrer" href="#" class="buttons__item button">
+					<button class="buttons__item photos__btn button">
 						<div class="button__icon"><img src="img/icons/image.svg" alt=""></div>
 						<div class="button__text">Мои фотографии</div>
-					</a>
+					</button>
 					<a target="_blank" rel="noopener noreferrer" href="https://t.me/prokashev_daniil" class="buttons__item button button_social button_tg">
 						<div class="button__icon"><img src="img/icons/tg.svg" alt=""></div>
 						<div class="button__text">Telegram</div>
 					</a>
-					<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/panya_tnl_drokashev/" class="buttons__item button button_social button_inst">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/panya_drokashev/" class="buttons__item button button_social button_inst">
 						<div class="button__icon"><img src="img/icons/inst.svg" alt=""></div>
 						<div class="button__text">Instagram</div>
 					</a>
@@ -201,9 +201,51 @@
 	</div>
 	<div class="_modal callback">
 		<div class="modal-bg">
-			<div class="modal-body">
-				<div class="modal-close"></div>
-				<div class="modal-content"></div>
+			<div class="modal-body callback__body">
+				<div class="modal-close">закрыть</div>
+				<div class="modal-content callback__content">
+					<div class="callback__title">Оставьте заявку, и я отвечу Вам!</div>
+					<form class="callback__form">
+						<input required type="text" autocomplete="name" name="name" placeholder="Ваше имя" class="callback__input">
+						<input required type="text" name="contact" placeholder="Ваш контакт (почта, телеграм или номер телефона)" class="callback__input">
+						<textarea rows="5" required type="text" name="message" placeholder="Опишите вкратце, что Вас интересует" class="callback__input"></textarea>
+						<button class="callback__submit main__button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="_modal success">
+		<div class="modal-bg">
+			<div class="modal-body success__body">
+				<div class="modal-close">Закрыть</div>
+				<div class="modal-content success__content">
+					<svg width="200" height="200" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M250 41.6665C208.796 41.6665 168.516 53.885 134.256 76.777C99.996 99.669 73.2933 132.206 57.5251 170.274C41.7568 208.342 37.6311 250.231 45.6697 290.644C53.7083 331.056 73.5501 368.178 102.686 397.314C131.822 426.45 168.943 446.292 209.356 454.33C249.769 462.369 291.658 458.243 329.726 442.475C367.794 426.706 400.331 400.004 423.223 365.744C446.115 331.483 458.333 291.204 458.333 250C458.333 222.641 452.945 195.55 442.475 170.274C432.005 144.998 416.659 122.031 397.314 102.686C377.968 83.3404 355.002 67.9947 329.726 57.5249C304.45 47.0552 277.359 41.6665 250 41.6665ZM339.583 200.208L244.375 325.208C242.434 327.729 239.942 329.772 237.089 331.181C234.236 332.589 231.098 333.326 227.917 333.333C224.752 333.35 221.625 332.646 218.774 331.274C215.922 329.903 213.42 327.899 211.458 325.416L160.625 260.625C158.942 258.463 157.702 255.992 156.975 253.351C156.247 250.71 156.047 247.952 156.386 245.234C156.724 242.516 157.595 239.892 158.948 237.51C160.301 235.128 162.109 233.037 164.271 231.354C168.636 227.956 174.172 226.431 179.661 227.115C182.379 227.453 185.004 228.324 187.386 229.677C189.767 231.03 191.859 232.838 193.542 235L227.5 278.333L306.25 174.166C307.919 171.978 310.003 170.139 312.382 168.756C314.761 167.372 317.39 166.471 320.118 166.104C322.845 165.736 325.619 165.909 328.28 166.614C330.94 167.318 333.436 168.539 335.625 170.208C337.814 171.877 339.652 173.961 341.036 176.34C342.419 178.72 343.32 181.348 343.688 184.076C344.056 186.804 343.882 189.577 343.178 192.238C342.474 194.898 341.252 197.394 339.583 199.583V200.208Z" fill="#42CF00" />
+					</svg>
+					<div class="callback__title">Ваша заявка успешно отправлена!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="_modal photos">
+		<div class="modal-bg">
+			<div class="modal-body photos__body">
+				<div class="modal-close">закрыть</div>
+				<div class="modal-content photos__content">
+					<a target="_blank" rel="noopener noreferrer" href="https://t.me/lookwhatiphotographed" class="photos__item">
+						<img src="img/icons/tg_colored.svg" alt="">
+						<span>Telegram-канал</span>
+					</a>
+					<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/panya_indastreet/" class="photos__item">
+						<img src="img/icons/inst_colored.svg" alt="">
+						<span>Instagram-aккаунт</span>
+					</a>
+					<a target="_blank" rel="noopener noreferrer" href="https://pinterest.com/panya_drokashev/" class="photos__item">
+						<img src="img/icons/pinterest_colored.svg" alt="">
+						<span>Профиль в Pinterest</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
