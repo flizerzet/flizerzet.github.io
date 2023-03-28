@@ -1734,7 +1734,7 @@
         elems.forEach((input => {
             info[input.name] = input.value;
         }));
-        let msg = `\n\t\t\tЗаявка на сайт %0A\n\t\t\tИмя: ${info.name}%0A\n\t\t\tСпособ связи: ${info.contact}\n\t\t`;
+        let msg = `\n\t\t\tЗаявка на сайт %0A\n\t\t\tИмя: ${info.name}%0A\n\t\t\tСпособ связи: ${info.contact}%0A\n\t\t\tСпособ связи: ${info.message}\n\t\t`;
         const tkn = "5904795540:AAErPZdqq52wBFQGQDyisnenktTo-qflfvA";
         lib_axios({
             method: "post",
