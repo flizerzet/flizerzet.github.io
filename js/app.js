@@ -1734,12 +1734,13 @@
         elems.forEach((input => {
             info[input.name] = input.value;
         }));
-        let msg = `\n\t\t\tЗаявка на сайт %0A\n\t\t\tИмя: ${info.name}%0A\n\t\t\tСпособ связи: ${info.contact}%0A\n\t\t\tСпособ связи: ${info.message}\n\t\t`;
+        let msg = `\n\t\t\tЗаявка на сайт %0A\n\t\t\tИмя: ${info.name}%0A\n\t\t\tСпособ связи: ${info.contact}%0A\n\t\t\tСообщение: ${info.message}\n\t\t`;
         const tkn = "5904795540:AAErPZdqq52wBFQGQDyisnenktTo-qflfvA";
         lib_axios({
             method: "post",
             url: `https://api.telegram.org/bot${tkn}/sendMessage?chat_id=-909017538&parse_mode=html&text=${msg}`
         });
+        elems.forEach((elem => elem.value = ""));
     };
     const callbackForm = document.querySelector(".callback__form");
     callbackForm.addEventListener("submit", (event => {
